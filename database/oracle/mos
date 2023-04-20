@@ -1,0 +1,30 @@
+#### 软件/补丁
+
+Assistant: Download Reference for Oracle Database/GI Update, Revision, PSU, SPU(CPU), Bundle Patches, Patchsets and Base Releases (Doc ID 2118136.2)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=96696007738630&id=2118136.2&_adf.ctrl-state=hfrljcpju_52
+
+Database 11.2.0.4 Proactive Patch Information (Doc ID 2285559.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=162969924336302&parent=DOCUMENT&sourceId=2285558.1&id=2285559.1&_afrWindowMode=0&_adf.ctrl-state=rk2k6e0o_110
+
+Database 12.1.0.2 Proactive Patch Information (Doc ID 2285558.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=162923406608914&id=2285558.1&_adf.ctrl-state=rk2k6e0o_53
+
+Database 12.2.0.1 Proactive Patch Information (Doc ID 2285557.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=163018757055136&parent=DOCUMENT&sourceId=2285559.1&id=2285557.1&_afrWindowMode=0&_adf.ctrl-state=rk2k6e0o_159
+
+Oracle Database 19c Proactive Patch Information (Doc ID 2521164.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=163052173873008&parent=DOCUMENT&sourceId=2285557.1&id=2521164.1&_afrWindowMode=0&_adf.ctrl-state=rk2k6e0o_208
+
+
+#### 操作
+How to Modify Public Network Information including VIP in Oracle Clusterware (Doc ID 276434.1)	
+https://support.oracle.com/epmos/faces/DocumentDisplay?_adf.ctrl-state=wljs5qoau_52&id=276434.1&_afrLoop=425476422625931
+
+Oracle Database (RDBMS) on Unix AIX,HP-UX,Linux,Mac OS X,Solaris,Tru64 Unix Operating Systems Installation and Configuration Requirements Quick Reference (8.0.5 to 11.2) (Doc ID 169706.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=99594263857379&id=169706.1&_adf.ctrl-state=ul1zcho6k_187#RelatedDocs
+
+How to change the DB_UNIQUE_NAME in a RAC database (Doc ID 1604421.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=254277236707202&id=1604421.1&_adf.ctrl-state=uqypl8gmh_9
+
+
+#### BUG
