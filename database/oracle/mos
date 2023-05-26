@@ -40,3 +40,6 @@ Parallel Capabilities of Oracle Data Pump (Doc ID 365459.1)
 https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=159783506533695&id=365459.1&_afrWindowMode=0&_adf.ctrl-state=6ykwjmg_4
 
 
+#### 问题
+DG standby: account-status OPEN but login fails with "ORA-28000: the account is locked" (Doc ID 2718878.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=6254125988273&id=2718878.1&_afrWindowMode=0&_adf.ctrl-state=u1yj8w2z5_4
