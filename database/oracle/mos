@@ -26,6 +26,29 @@ https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=163018757055136&
 Oracle Database 19c Proactive Patch Information (Doc ID 2521164.1)
 https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=163052173873008&parent=DOCUMENT&sourceId=2285557.1&id=2521164.1&_afrWindowMode=0&_adf.ctrl-state=rk2k6e0o_208
 
+数据库主动补丁流程
+Primary Note for Database Proactive Patch Program (Doc ID 888.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?id=888.1&_adf.ctrl-state=roen9cc7n_634&_afrLoop=49509882465441
+
+数据库补丁发行办法 -- 12.1.0.2及更早
+Oracle Database - Overview of Database Patch Delivery Methods - 12.1.0.2 and older (Doc ID 1962125.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?id=1962125.1&_adf.ctrl-state=roen9cc7n_125&_afrLoop=47926011677169
+
+数据库补丁发行办法 -- 12.2.0.1及更新
+Oracle Database - Overview of Database Patch Delivery Methods for 12.2.0.1 and greater (Doc ID 2337415.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=48581785189465&id=2337415.1&_adf.ctrl-state=roen9cc7n_346
+
+补丁命名方法
+Patch Nomenclature for Oracle Products (Doc ID 1430923.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=50202677772656&id=1430923.1&_adf.ctrl-state=roen9cc7n_807
+
+RU介绍
+Release Update Introduction and FAQ (Doc ID 2285040.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=50123170565800&id=2285040.1&_adf.ctrl-state=roen9cc7n_742
+
+废弃RUR
+Sunsetting of 19c RURs and FAQ (Doc ID 2898381.1)
+https://support.oracle.com/epmos/faces/DocumentDisplay?id=2898381.1&_adf.ctrl-state=roen9cc7n_497&_afrLoop=49160680229423
 
 #### 操作
 如何修集群软件的公网信息
