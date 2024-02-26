@@ -1,6 +1,60 @@
 #==============================================================#
-#                      query sql                               #
+#                      DQL                                     #
 #==============================================================#
-# 查询asm磁盘
+-- asm磁盘
 select group_number, disk_number, mount_status, header_status, state, name, path from v$asm_disk;
+
+-- 事件等待
+set linesize 180
+col event format a60
+col total_wait_time format 999999999999999999
+select event, sum ( wait_time + time_waited) total_wait_time
+from v$active_session_history
+where sample_time between sysdate - 1/(24*60) and sysdate and event is not null
+group by event
+order by 2 desc;
+
+-- 表空间利用率
+SELECT Upper(F.TABLESPACE_NAME)         "tsname",
+       D.TOT_GROOTTE_MB                 "size(M)",
+       D.TOT_GROOTTE_MB - F.TOTAL_BYTES "used(M)",
+       To_char(Round(( D.TOT_GROOTTE_MB - F.TOTAL_BYTES ) / D.TOT_GROOTTE_MB * 100, 2), '990.99')
+       || '%'                           "ratio",
+       F.TOTAL_BYTES                    "free(M)",
+       F.MAX_BYTES                      "max(M)"
+FROM   (SELECT TABLESPACE_NAME,
+               Round(Sum(BYTES) / ( 1024 * 1024 ), 2) TOTAL_BYTES,
+               Round(Max(BYTES) / ( 1024 * 1024 ), 2) MAX_BYTES
+        FROM   SYS.DBA_FREE_SPACE
+        GROUP  BY TABLESPACE_NAME) F,
+       (SELECT DD.TABLESPACE_NAME,
+               Round(Sum(DD.BYTES) / ( 1024 * 1024 ), 2) TOT_GROOTTE_MB
+        FROM   SYS.DBA_DATA_FILES DD
+        GROUP  BY DD.TABLESPACE_NAME) D
+WHERE  D.TABLESPACE_NAME = F.TABLESPACE_NAME;
+
+
+#==============================================================#
+#                      DDL                                     #
+#==============================================================#
+-- 设置参数
+alter system set db_writer_processes=2 sid='*' scope=spfile;
+
+
+#==============================================================#
+#                      DML                                     #
+#==============================================================#
+-- 开启归档
+-- rac每条命令要同时执行
+archive log list;
+shutdown immediate;
+startup mount;
+alter database archivelog;
+alter database open;
+archive log list;
+
+#==============================================================#
+#                      DCL                                     #
+#==============================================================#
+
 
