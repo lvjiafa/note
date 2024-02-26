@@ -1,1 +1,6 @@
-## query sql
+#==============================================================#
+#                      query sql                               #
+#==============================================================#
+# 查询asm磁盘
+select group_number, disk_number, mount_status, header_status, state, name, path from v$asm_disk;
+
